@@ -43,6 +43,8 @@ public class aVoteService {
 	}
 	
 	public void printResult () {
+		
+		System.out.println("Results:");
 		for (int i = 0; i < numSelectedAns.length; i++) {
 			System.out.println("[" + (char)(i+65) + "]" + (int)(((float)numSelectedAns[i]/submissions.size())*100) + "%");
 		}
